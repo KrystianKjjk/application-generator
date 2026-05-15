@@ -1,10 +1,10 @@
 @AGENTS.md
 
-# CLAUDE.md — Briefing projektu: Formularz urzędowy → PDF
+# CLAUDE.md — Briefing projektu: Formularz → PDF
 
 ## Cel projektu
 
-Aplikacja webowa oparta na Next.js, która umożliwia użytkownikowi wypełnienie formularza urzędowego w przeglądarce, a następnie pobranie gotowego dokumentu PDF — bez udziału serwera backendowego. Całość działa po stronie klienta (frontend-only).
+Aplikacja webowa oparta na Next.js, która umożliwia użytkownikowi wypełnienie formularza w przeglądarce, a następnie pobranie gotowego dokumentu PDF — bez udziału serwera backendowego. Całość działa po stronie klienta (frontend-only).
 
 ---
 

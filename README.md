@@ -1,6 +1,6 @@
-# Formularz urzędowy → PDF
+# Formularz → PDF
 
-Aplikacja webowa umożliwiająca wypełnienie formularza urzędowego w przeglądarce i pobranie gotowego dokumentu PDF. Działa w całości po stronie klienta — bez backendu.
+Aplikacja webowa umożliwiająca wypełnienie formularza w przeglądarce i pobranie gotowego dokumentu PDF. Działa w całości po stronie klienta.
 
 ## Tech stack
 

@@ -49,7 +49,7 @@ export async function generatePdf(data: FormValues): Promise<Uint8Array> {
     color: rgb(0.07, 0.33, 0.82),
   });
 
-  page.drawText("Formularz urzędowy", {
+  page.drawText("Formularz", {
     x: margin,
     y: height - 44,
     size: 20,
