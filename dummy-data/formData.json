@@ -1,0 +1,15 @@
+{
+  "firstName": "Jan",
+  "lastName": "Kowalski",
+  "email": "jan.kowalski@example.com",
+  "phone": "123 456 789",
+  "kraj": "Polska",
+  "wojewodztwo": "Mazowieckie",
+  "powiat": "Warszawski",
+  "gmina": "Warszawa",
+  "ulica": "ul. Marszałkowska",
+  "nrDomu": "12",
+  "nrLokalu": "5",
+  "miejscowosc": "Warszawa",
+  "kodPocztowy": "00-001"
+}
