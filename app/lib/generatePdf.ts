@@ -67,35 +67,39 @@ export async function generatePdf(data: FormValues): Promise<Uint8Array> {
     color: rgb(0.8, 0.8, 0.8),
   });
 
-  y -= 24;
+  const ROW_HEIGHT = 26;
+  const FONT_SIZE = 10;
 
   // Render each field
   for (const { label, key } of FIELDS) {
     const value = data[key];
     if (!value) continue;
 
+    // Vertically center text within the row (baseline offset from row top)
+    const textY = y - ROW_HEIGHT / 2 + FONT_SIZE * 0.35;
+
     page.drawText(`${label}:`, {
       x: margin,
-      y,
-      size: 10,
+      y: textY - 8,
+      size: FONT_SIZE,
       font: boldFont,
       color: rgb(0.3, 0.3, 0.3),
     });
 
     page.drawText(String(value), {
       x: colSplit,
-      y,
-      size: 10,
+      y: textY - 8,
+      size: FONT_SIZE,
       font: regularFont,
       color: rgb(0.05, 0.05, 0.05),
     });
 
-    y -= 22;
+    y -= ROW_HEIGHT;
 
-    // Thin row separator
+    // Thin row separator at the bottom of this row
     page.drawLine({
-      start: { x: margin, y: y + 8 },
-      end: { x: width - margin, y: y + 8 },
+      start: { x: margin, y },
+      end: { x: width - margin, y },
       thickness: 0.3,
       color: rgb(0.92, 0.92, 0.92),
     });

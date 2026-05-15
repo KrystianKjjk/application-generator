@@ -50,7 +50,7 @@ export default function OfficialForm({ onGenerated }: OfficialFormProps) {
     async (data: FormValues) => {
       const bytes = await generatePdf(data);
       const url = URL.createObjectURL(
-        new Blob([bytes], { type: "application/pdf" }),
+        new Blob([bytes.buffer as ArrayBuffer], { type: "application/pdf" }),
       );
       onGenerated(url);
     },
